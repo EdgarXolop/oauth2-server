@@ -72,7 +72,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
 
     @Bean
     public JwtTokenStore tokenStore() {
-        return new JwtTokenStore(tokenEnhancer());
+        return new  JwtTokenStore(tokenEnhancer());
     }
 
     @Override
