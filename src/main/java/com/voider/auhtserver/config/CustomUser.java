@@ -7,6 +7,6 @@ public class CustomUser extends org.springframework.security.core.userdetails.Us
     private static final long serialVersionUID = 1L;
 
     public CustomUser(User user) {
-        super(user.getUser_name(), user.getPassword(), user.getGrantedAuthoritiesList());
+        super(user.getEmail(), user.getPassword(), user.getGrantedAuthoritiesList());
     }
 }

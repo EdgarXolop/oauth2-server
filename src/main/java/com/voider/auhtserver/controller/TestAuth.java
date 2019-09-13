@@ -14,6 +14,7 @@ public class TestAuth {
 
     @GetMapping("/me")
     public Principal user(Principal principal) {
+
         return principal;
     }
 }
